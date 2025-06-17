@@ -1,0 +1,8 @@
+# Arquivos de Ambiente de Execução
+
+/venv
+.env
+
+# Arquivos de Dados Brutos
+
+/data/raw
