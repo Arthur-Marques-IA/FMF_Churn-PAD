@@ -111,10 +111,10 @@ def fill_missing_values(df: pd.DataFrame) -> pd.DataFrame:
     for col in date_cols:
         if col in df.columns:
             df[f'{col}_is_missing'] = df[col].isna().astype(int)
-            df[col] = pd.to_datetime(df[col], errors='coerce', format="%d/%m/%Y")  # Convertendo para datetime, tratando diversos formatos
+            df[col] = pd.to_datetime(df[col], errors='coerce', format="%d/%m/%Y")   # Convertendo para datetime
             median_date = df[col].median()
             df[col] = df[col].fillna(median_date)
-            df[col] = df[col].dt.strftime("%d/%m/%Y")           # Retorna o formato para dd/mm/yyyy
+            df[col] = df[col].dt.strftime("%d/%m/%Y")                               # Retorna o formato para dd/mm/yyyy
 
     return df
 
