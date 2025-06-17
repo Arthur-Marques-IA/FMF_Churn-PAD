@@ -83,7 +83,7 @@ para garantir que os dados estejam devidamente preparados e validados.
 
 # --- Carregando o CSV ---
 
-file_path = 'data/raw/atendimentos_de_alunos.csv'
+file_path = 'data/interim/atendimentos_de_alunos.csv'
 df = pd.read_csv(file_path, sep=";")
 
 # --- Aplica Ofuscação na coluna MATRICULAID ---
