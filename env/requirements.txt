@@ -1,2 +1,4 @@
 pandas
 dotenv
+scikit-learn
+numpy
