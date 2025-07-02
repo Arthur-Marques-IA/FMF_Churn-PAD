@@ -6,3 +6,4 @@
 # Arquivos de Dados Brutos
 
 /data/raw
+*.csv#
